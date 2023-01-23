@@ -1,0 +1,85 @@
+html {
+	box-sizing: border-box;
+    background-color:#eab535;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+display: flex;
+justify-content: center;
+margin: 20px;
+padding: 20px;
+background-color: #d67113;
+color: #492d1f;
+
+}
+.h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.game-container{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    gap:20px;
+    margin-left: 140px;
+}
+img {
+    
+    width: 200px;
+    height: 200px;
+    display: none;
+    border-radius: 20px;
+}
+
+.card{
+    
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    /* background-color: blueviolet; */
+    margin: 5px;
+    /* padding-top: 30px;
+    padding-left: 35px; */
+    background-image: url(image/back4.jpeg);
+    /* transform: rotateY(180deg); */
+    cursor: pointer;
+    transition: all 1.5s;
+    box-shadow: 8px 9px 26px 0 #2a3515, -8px -9px 26px 0 #2a3515;
+
+}
+.front{
+    display: relative;
+    transform: rotateY(180deg);
+	animation-name: flipY;
+	-webkit-backface-visibility: visible ;
+	backface-visibility: visible;
+	animation-duration: .3s;
+    float: none;
+}
+.back{
+    display: none;
+    transform: rotateY(180deg);
+	/* animation-name: flipY; */
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible ;
+	/* animation-duration: .3s; */
+}
+
+
+
+/* match card::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* :::::::::::::::::::flip:::::::::::::::::::: */
+
+
+.flip{
+    transform: rotateY(180deg);
+}

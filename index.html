@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory games </title>
+
+     <!-- //////// style//////:: -->
+     <!-- <style>
+        *{
+           margin: 0;
+           padding: 0;
+           background-color: rgb(153, 231, 231);
+           /* box-sizing: border-box; */
+        }
+        /* .front{
+            width: 64%;
+        }
+        .back{
+            width: 53%;
+           /* padding: 20%; */
+        /* } */ */
+        /* .back,.front{
+            position: absolute; 
+              width: 100%; 
+            height: 100%;
+             }  */
+             img {
+                width: 200px;
+                height: 20vh;
+             }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .game-container{
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-columns: repeat(4,1fr);
+            padding: 10px;
+            gap: 5%;
+        }
+        .card{
+            border: 1px solid white;
+            border-radius: 10px;
+            position: relative;
+            background: red;
+            transform-style: preserve-3d;
+            transition: all .2s;
+            box-shadow: 1px 1px 10px black;
+            width: 200px;
+            height: 20vh;
+        }
+   
+       </style> -->
+</head>
+<body>
+
+
+    <!-- ////////////////HTML/////////////// -->
+    <div class="container">
+        <h1>Memory Game</h1>
+
+    </div>
+
+    <div class="game-container">
+        <div class="card" id="card1" onclick="openPicture(this)" >
+            <img id="img1" src="image/bettergourd.jpg"  class="front">
+            <!-- <img src="image/cabbage.jpg"  class="back"> -->
+
+        </div>
+
+        <div class="card" id="card2" onclick="openPicture(this)">
+            <img  id="img2" src="image/pepper.jpg"  class="front">
+            <!-- <img src="image/cabbage.jpg" class="back"> -->
+
+        </div>
+
+        <div class="card" id="card3" onclick="openPicture(this)">
+            <img id="img3" src="image/bettergourd.jpg"  class="front">
+            <!-- <img src="image/carrot.jpg"  class="back"> -->
+
+        </div>
+
+        <div class="card"  id="card4" onclick="openPicture(this)">
+            <img id="img4" src="image/pepper.jpg"  class="front">
+            <!-- <img src="image/carrot.jpg"  class="back"> -->
+
+        </div>
+
+        <div class="card"  id="card5" onclick="openPicture(this)">
+            <img id="img5" src="image/cabbage.jpg"  class="front">
+            <!-- <img src="image/egplane.jpg"  class="back"> -->
+
+        </div>
+
+        <div class="card"  id="card6" onclick="openPicture(this)">
+            <img id="img6" src="image/egplane.jpg"  class="front">
+             <!-- <img src="image/egplane.jpg"  class="back"> -->
+    
+
+        </div>
+
+        <div class="card" id="card7"  onclick="openPicture(this)">
+            <img id="img7" src="image/cabbage.jpg"  class="front">
+            <!-- <img src="image/egplane.jpg"  class="back"> -->
+
+        </div>
+
+        <div class="card egplane"  id="card8" onclick="openPicture(this)">
+            <img id="img8" src="image/egplane.jpg"  class="front">
+             <!-- <img src="image/egplane.jpg"  class="back"> -->
+            </div>
+
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
